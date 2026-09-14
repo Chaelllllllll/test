@@ -1,17 +1,24 @@
 #include <iostream>
-using namespace std;
+#include <vector>
+#include <string>nskansjskaka
 
 int main() {
-    string name;
-    int age;
+    std::cout << "========================================\n";
+    std::cout << "  Welcome to siplasplas C++ Playground  \n";
+    std::cout << "========================================\n\n";
+    
+    std::vector<std::string> features = {
+        "High-performance execution",
+        "GCC 14.1 / Clang compilers",
+        "Real-time stdout & stderr",
+        "Interactive STDIN support"
+    };
 
-    cout << "Name: " << endl;
-    cin >> name;
+    std::cout << "Engine Features:\n";
+    for (size_t i = 0; i < features.size(); ++i) {
+        std::cout << " [" << (i + 1) << "] " << features[i] << "\n";
+    }
 
-    cout << "Age: " << endl;
-    cin >> age;
-
-    cout << "Name: " << name;
-    cout << "Age: " << age;
+    std::cout << "\nCompiled and executed successfully!\n";
     return 0;
 }
